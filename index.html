@@ -3,7 +3,10 @@
 
   <head>
     <link rel="stylesheet" href="main.css">
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="guessing-game.js"></script>
+
+
   </head>
 
   <body>
@@ -20,18 +23,25 @@
     <div class="nav">
       <div class="container">
           <h4><a href="https://www.quora.com/What-is-the-best-strategy-for-winning-a-hot-cold-number-guessing-game"><center>Learn more about how to win the guessing game, from the good people at Quora</center></a></h4>
-          <br>
+            <br>
           <form>
-          <center>Enter Your Guess Here:</center>
-          <center><input type="text" name="firstname"></center>
+            <center>Enter Your Guess Here:</center>
+            <center><input id="playerGuess" type="text"></center>
           </form>
+            <br>
+            <br>
+            <br>
+          <div class="alert" id="message">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+            
+          </div>
+          <center><a id="getInput" class="button">Submit Your Guess</a><center>
           <br>
           <br>
-          <br>
-          <center><a href="#" class="button">Submit Your Guess</a><center>
-          <br>
-          <br>
-          <center><a href="#" class="button2">Play Again!</a><center>
+          <center><a id="playAgain" class="button2">Play Again!</a><center>
+           <br>
+           <br>
+           <center><a id="hint" class="button3">Give Me A Hint!</a><center>
        
           
       
@@ -46,8 +56,7 @@
       </div>
     </div>
 
-          
-       
+    
    
   </body>
 </html>
